@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Central</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="top-header">
+      <div class="left-links">
+        <a href="#">Help</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">About Google</a>
+      </div>
+      <div class="right-links">
+        <a href="#">Get the Android app</a>
+        <a href="#">Get the iOS app</a>
+        <a href="#">Send feedback</a>
+        <div class="dropdown">
+          <button class="settings-btn">Settings</button>
+          <div class="dropdown-content">
+            <a href="#">Language & Region: English (United States)</a>
+          </div>
+        </div>
+        <button class="sign-in">Sign in</button>
+        <img src="google-apps-icon.png" alt="Google Apps" class="icon">
+        <img src="menu-icon.png" alt="Main Menu" class="icon">
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">For you</a></li>
+        <li><a href="#">Following</a></li>
+        <li><a href="#">U.S.</a></li>
+        <li><a href="#">World</a></li>
+        <li><a href="#">Local</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Health</a></li>
+        <li class="more"><a href="#">More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-bar">
+      <input type="text" placeholder="Search news...">
+      <button onclick="clearSearch()">Clear</button>
+      <button onclick="closeSearch()">Close</button>
+    </section>
+
+    <section class="briefing">
+      <h2>Your briefing</h2>
+      <h3>Top stories</h3>
+      <article class="news-item">
+        <h4>Pope Francis Dies at 88</h4>
+        <p class="source">The New York Times &middot; 3 hours ago</p>
+        <a href="#">Full coverage</a>
+      </article>
+      <article class="news-item">
+        <h4>Stock Market Update</h4>
+        <p class="source">Reuters &middot; 2 hours ago</p>
+      </article>
+    </section>
+
+    <section class="local-news">
+      <h2>Local news</h2>
+      <article class="news-item">
+        <h4>Mayor Announces New Policy</h4>
+        <p class="source">The Hill &middot; 8 minutes ago</p>
+      </article>
+    </section>
+
+    <section class="picks-for-you">
+      <h2>Picks for you</h2>
+      <p><a href="#">Sign in</a> for personalized stories</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 News Central. <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    function clearSearch() {
+      document.querySelector('.search-bar input').value = '';
+    }
+
+    function closeSearch() {
+      document.querySelector('.search-bar').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>

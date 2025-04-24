@@ -1,0 +1,124 @@
+/* General Reset & Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #080808;
+}
+
+a {
+  text-decoration: none;
+  color: #0b0b0b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgba(21, 20, 20, 0.827);
+}
+
+header, nav, main, footer {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+/* Top Header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+}
+
+.left-links a,
+.right-links a {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.settings-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Navigation Bar */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #e8f0fe;
+  padding: 10px;
+}
+
+.main-nav li a {
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.main-nav li.more a {
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* News Sections */
+section {
+  margin: 20px;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.news-item {
+  margin-bottom: 15px;
+}
+
+.news-item h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.source {
+  font-size: 12px;
+  color: #666;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
