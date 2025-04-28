@@ -1,0 +1,13 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS latest_news_db;
+USE latest_news_db;
+
+-- Create the news table
+CREATE TABLE IF NOT EXISTS news (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    category VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
